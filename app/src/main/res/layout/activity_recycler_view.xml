@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FF5722">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:id="@+id/RecyclerView"
+        ></androidx.recyclerview.widget.RecyclerView>
+
+
+    <LinearLayout
+        android:background="#FF5722"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="100dp">
+        <ImageView
+            android:id="@+id/card1"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/card2"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/card3"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/card4"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </ImageView>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/clear_bt"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/bt_background"
+            android:text="清空"
+            android:textSize="25dp"></Button>
+
+        <Button
+            android:background="@drawable/bt_background"
+            android:id="@+id/compute_bt"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_toRightOf="@+id/clear_bt"
+            android:layout_marginLeft="150dp"
+            android:text="计算"
+            android:textSize="25dp"></Button>
+
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/res_text"
+        android:scrollbars="vertical"
+        android:maxLines="15"
+        android:textSize="25sp"
+        android:background="#FF5722"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_marginTop="20dp"
+        >
+
+    </TextView>
+
+
+</LinearLayout>
